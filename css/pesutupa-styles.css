@@ -126,7 +126,7 @@ section {
 
 .parallax-stage {
     /* The image used */
-    background-image: url("/img/stage2.3.jpg");
+    background-image: url("img/stage2.3.jpg");
     /* background-color: ; */
 
     /* Set a specific height */
@@ -142,7 +142,7 @@ section {
 
 .parallax-drum {
     /* The image used */
-    background-image: url("/img/rumpu.jpg");
+    background-image: url("img/rumpu.jpg");
     background-color: black;
 
     /* Set a specific height */
