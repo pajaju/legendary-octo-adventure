@@ -1,0 +1,228 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+
+body {
+    color: #ccc;
+    background: #111;
+    font-family: 'Cyberpunk Is Not Dead', sans-serif;
+}
+
+
+.rubik-marker-hatch-regular {
+    font-family: "Rubik Marker Hatch", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin-top: 15%;
+}
+
+a {
+    color: #ccc;
+}
+
+section {
+    padding: 20px;
+}
+
+.slides-section {
+    font-weight: 400;
+    width: 100%;
+
+
+}
+
+.mySlides {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    /* min-width: 1280px; */
+    justify-content:space-around
+    /* jos width on auto, teksti on keskellä, kuva venyy */
+    /* jos width määritelty, kuva on oikein teksti likkuu */
+    /* width ei oo pakko edes määritellä ja ssilti teksti keskelle, miten vitus kuva?! */
+
+}
+
+.hero {
+    font-size: clamp(20px, 6vw, 50px);
+    /* (min, val, max) */
+    line-height: 1;
+    display: inline-block;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 8px;
+    font-family: "Rubik Marker Hatch", monospace;
+    /* Bright things in dark environments usually cast that light, giving off a glow */
+    filter: drop-shadow(0 1px 3px);
+    position: relative;
+    
+
+
+}
+
+.hero-image {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* background-origin: border-box; */
+    /* min-width:1280px; */
+    width: 100%;
+    min-height:100%;
+    /* position: relative; */
+
+}
+
+.pt-poster {
+    object-fit: cover;
+    width: 100%;
+    height: 420px;
+}
+
+.pt-poster:hover {
+    animation: cyber-glitch-0 5s linear infinite;
+}
+
+
+.zoom {
+
+    transition: transform .2s;
+    /* Animation */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    animation: cyber-glitch-0 5s linear infinite;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.parallax-stage {
+    /* The image used */
+    background-image: url("/img/stage2.3.jpg");
+    /* background-color: ; */
+
+    /* Set a specific height */
+    min-height: 500px;
+    max-width: 1280px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.parallax-drum {
+    /* The image used */
+    background-image: url("/img/rumpu.jpg");
+    background-color: black;
+
+    /* Set a specific height */
+    min-height: 500px;
+    max-width: 1280px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dj-name {
+    font-family: 'Orbiton', monospace;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+
+/*description: good for images. Effect of a dying flickering screen. Sometimes bright, sometimes dark.*/
+.cyber-glitch-0 {
+    animation: cyber-glitch-0 5s linear infinite;
+}
+
+
+@keyframes cyber-glitch-0 {
+    0% {
+        filter: blur(0) brightness(100%) contrast(100%);
+    }
+
+    2% {
+        filter: blur(.05rem) brightness(120%) contrast(120%);
+    }
+
+    4% {
+        filter: blur(.10rem) brightness(150%) contrast(150%);
+    }
+
+    6% {
+        filter: blur(.20rem) brightness(170%) contrast(170%);
+    }
+
+    8% {
+        filter: blur(0) brightness(100%) contrast(100%);
+    }
+
+    10% {
+        filter: blur(0) brightness(100%) contrast(100%);
+    }
+
+    60% {
+        filter: blur(0) brightness(100%) contrast(100%);
+    }
+
+    62% {
+        filter: blur(.05rem) brightness(60%) contrast(100%);
+    }
+
+    64% {
+        filter: blur(.10rem) brightness(40%) contrast(100%);
+    }
+
+    66% {
+        filter: blur(0) brightness(100%) contrast(100%);
+    }
+
+    68% {
+        filter: blur(.05rem) brightness(60%) contrast(100%);
+    }
+
+    70% {
+        filter: blur(.10rem) brightness(40%) contrast(100%);
+    }
+
+    72% {
+        filter: blur(0) brightness(100%) contrast(100%);
+    }
+
+    100% {
+        filter: blur(0) brightness(100%) contrast(100%);
+    }
+}
